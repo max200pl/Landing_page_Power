@@ -1,0 +1,193 @@
+// main: ../style.less
+.intro {
+    /*    @media @mobile{
+        margin-top: 100px;
+    }*/
+}
+
+.intro__inner {
+    display: flex;
+
+    margin-top: 370px;
+    background: #fff;
+    position: relative;
+
+    /*   @media @tablet {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        background-size: 400px auto;
+    }
+
+    @media @mobile {
+        background-size: 300px auto;
+    }*/
+}
+
+.intro__content {
+    width: 48.4%;
+
+    &--right{
+        position: absolute;
+        right: 0;
+    }
+
+    /*
+    @media @mobile {
+        width: 60%;
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
+*/
+
+}
+
+.intro__subtitle {
+    font-size: 3.3rem;
+    font-weight: 300;
+    margin-bottom: 32px;
+
+    color: @black;
+
+
+    /*   @media @tablet {
+        font-size: 1.5rem;
+
+    }*/
+}
+
+.intro__title {
+
+    font-size: 5.3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 21.5px;
+    color: @black;
+
+    &:after {
+
+        content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        margin-top: 26.5px;
+        background-color: @red;
+    }
+
+
+    /*   @media @tablet {
+        font-size: 2rem;
+
+    }*/
+}
+
+.intro__text {
+    font-size: 1.06rem;
+    font-weight: 300;
+
+    margin-bottom: 40px;
+
+    color: @gray-light;
+}
+
+/*BUTTON*/
+.intro-btn {
+    display: flex;
+    width: 100%;
+    max-width: 244px;
+    margin-bottom: 222px;
+}
+
+.intro-btn__text {
+    width: 77.4%;
+    height: 58px;
+
+}
+
+.intro-btn__cursor {
+    width: 22.6%;
+}
+
+/*PHOTO*/
+
+.intro__bulle {
+    position: absolute;
+    top: -127.5%;
+    left: -20%;
+    z-index: 1;
+
+    /*
+    @media @tablet {
+        width: 350px;
+    }
+
+    @media @mobile {
+        width: 300px;
+    }
+
+    @media @mobile-sm {
+        display: none;
+    }*/
+}
+
+.intro__photo {
+
+    position: absolute;
+    bottom: -181px;
+    right: -340px;
+    z-index: 1;
+
+    display: block;
+
+    max-width: 100%;
+
+    height: auto;
+
+    &--left{
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 100%;
+    }
+
+    /*
+    @media @tablet {
+        width: 350px;
+    }
+
+    @media @mobile {
+        width: 300px;
+    }
+
+    @media @mobile-sm {
+        display: none;
+    }*/
+}
+
+.intro__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.intro__item-content {
+    display: block;
+    max-width: 550px;
+    margin-left: 30px;
+}
+
+.intro__item-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: @black;
+
+    margin-bottom: 25px;
+}
+
+.intro__item-text {
+    font-size: 1.06rem;
+    font-weight: 300;
+    color: @gray-light;
+}

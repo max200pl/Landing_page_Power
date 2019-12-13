@@ -1,0 +1,57 @@
+// compress: false
+
+@import 'vars';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+body {
+
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    color: @black;
+    border: 1px solid @white;
+
+    /*&.no-scroll {
+        overflow: hidden;
+    }*/
+}
+
+/*Vendor*/
+@import "vendor/slick";
+
+
+/*Blocks*/
+@import 'blocks/container';
+@import 'blocks/header/header';
+@import 'blocks/header/nav';
+@import 'blocks/header/logo';
+@import 'blocks/btn';
+@import 'blocks/intro';
+
+
+/*helper*/
+
+@import 'helper';
