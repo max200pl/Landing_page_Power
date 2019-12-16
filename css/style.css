@@ -339,6 +339,9 @@ body {
         background-size: 300px auto;
     }*/
 }
+.intro__inner--story {
+  margin-top: 182px;
+}
 .intro__content {
   width: 48.4%;
   /*
@@ -354,6 +357,7 @@ body {
 .intro__content--right {
   position: absolute;
   right: 0;
+  top: 94.5px;
 }
 .intro__subtitle {
   font-size: 3.3rem;
