@@ -4,9 +4,7 @@
 
 .slick-slider {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    display: block;
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -22,10 +20,8 @@
     position: relative;
     overflow: hidden;
     display: block;
-    height: 100%;
     margin: 0;
     padding: 0;
-
 
     &:focus {
         outline: none;
@@ -50,8 +46,6 @@
     left: 0;
     top: 0;
     display: block;
-    height: 100%;
-
     margin-left: auto;
     margin-right: auto;
 
@@ -106,55 +100,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-//Обнуление стандартных свойств кнопки Sick
-
-.slick-dots{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    position: absolute;
-    bottom: 1.4rem;
-    left: 0;
-    z-index: 2;
-
-    li{
-        margin: 0 .5rem;
-        &.slick-active{
-            button{
-                background-color: #fff;
-            }
-        }
-    }
-
-
-    button{
-        width: 11px;
-        height: 11px;
-
-        padding: 0;
-        background-color: transparent;
-        border: 1px solid #fff;
-        background: none;
-        border-radius: 50%;
-
-
-        font-style: 0;     //убираем текст
-        color: transparent;//убираем текст
-
-        cursor: pointer;
-
-        &:focus{
-            outline: 0;
-        }
-    }
-}
-
