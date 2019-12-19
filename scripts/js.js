@@ -1,13 +1,13 @@
+const worksSlider = $('[data-slider="sl"]');
 
-
-$('.sl').slick({
+worksSlider.slick({
 
     slidesToShow: 5,
     centerMode: true,
     centerPadding: '0px',
 
     arrows: false,
-   /* responsive: [
+    /* responsive: [
         {
             breakpoint: 1100,
             settings: {
@@ -47,3 +47,26 @@ $('.sl').slick({
   ]*/
 
 });
+
+
+/*Button slider*/
+
+$(".slickPrev").on("click", function (event) {
+    event.preventDefault();
+
+    let currentSlider = $(this).parents('.classes').find('[data-slider="sl"]');
+
+    currentSlider.slick("slickPrev");
+});
+
+$(".slickNext").on("click", function(event){
+    event.preventDefault();
+
+    let currentSlider = $(this).parents('.classes').find('[data-slider="sl"]');
+
+    currentSlider.slick("slickNext");
+});
+
+/*Bg slider*/
+
+

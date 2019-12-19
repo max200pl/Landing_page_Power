@@ -148,8 +148,22 @@ body {
 .container__inner--classes {
   margin-top: 128px;
 }
+.container__photo {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
+.container__photo--right {
+  position: absolute;
+  z-index: 1;
+  right: -232px;
+  bottom: -781px;
+}
 .container__content {
   width: 48.4%;
+  position: relative;
 }
 .container__content--right {
   position: absolute;
@@ -189,6 +203,7 @@ body {
 .container__nav {
   width: 51.6%;
   display: flex;
+  justify-content: space-between;
   padding-left: 175.5px;
   align-items: center;
 }
@@ -456,11 +471,24 @@ span {
 .slick-current {
   /*    .slick-current центрального слайд */
   transform: translateY(-38px);
+  position: relative;
+  z-index: 1;
+}
+.slick-current:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../../images/our_classes/bg_points_red.svg") no-repeat;
+  top: 130px;
+  right: -65px;
+  position: absolute;
+  z-index: -1;
 }
 /*текущие слайды */
 .slick-slide {
   display: block;
   padding-right: 36px;
+  padding-top: 130px;
 }
 /*helper*/
 .text-center {
