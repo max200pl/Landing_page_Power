@@ -11,6 +11,7 @@
 
 .container__inner {
     display: flex;
+    justify-content: space-between;
 
     align-items: flex-start;
 
@@ -28,37 +29,33 @@
     &--classes {
         margin-top: 128px;
     }
-
-
-
 }
+
+.container__content{
+    width: 48.4%;
+    &--reviews{
+       width: 60%;
+    }
+}
+
 
 .container__photo {
-    position: relative;
     max-width: 100%;
     height: auto;
+
     display: block;
-    z-index: 1;
-
-    &--right {
-        position: absolute;
-        z-index: 1;
-        right: -232px;
-        bottom: -781px;
-    }
-}
-
-
-.container__content {
-    width: 48.4%;
     position: relative;
 
-    &--right {
+    &--right{
         position: absolute;
-        right: 0;
-        top: 94.5px;
+    right: -232px;
+    bottom: -800px;
+    z-index: 1;
     }
+
+
 }
+
 
 .container__subtitle {
     font-size: 3.3rem;
@@ -79,7 +76,6 @@
     }
 
     &:after {
-
         content: "";
         display: block;
         width: 100px;
@@ -87,22 +83,22 @@
         margin-top: 26.5px;
         background-color: @red;
     }
-
 }
+
 
 .container__text {
     font-size: 1.06rem;
     font-weight: 300;
-
-    margin-bottom: 40px;
-
     color: @gray-light;
 }
 
 .container__nav {
+    position: relative;
+    z-index: 3;
     width: 51.6%;
     display: flex;
-    justify-content: space-between;
-    padding-left: 175.5px;
-    align-items: center;
+    justify-content: flex-end;
+    &--reviews{
+        width: 40%;
+    }
 }
