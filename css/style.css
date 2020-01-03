@@ -182,9 +182,6 @@ body {
   margin-bottom: 21.5px;
   color: #181818;
 }
-.container__title--intro {
-  font-size: 5.3rem;
-}
 .container__title:after {
   content: "";
   display: block;
@@ -202,7 +199,12 @@ body {
   margin-bottom: 71px;
 }
 .container__text--story p {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+@media (max-width:1199px) {
+  .container__text--story {
+    margin-bottom: 30px;
+  }
 }
 .container__nav {
   position: relative;
@@ -624,15 +626,35 @@ body {
   position: relative;
   z-index: 1;
 }
+@media (max-width:1199px) {
+  .story__img {
+    width: 60%;
+  }
+}
 .story__item {
   display: flex;
   align-items: center;
   margin-bottom: 60px;
 }
+@media (max-width:1199px) {
+  .story__item {
+    margin-bottom: 30px;
+  }
+}
 .story__content {
   display: block;
-  max-width: 550px;
+  max-width: 460px;
   margin-left: 30px;
+}
+@media (max-width:1310px) {
+  .story__content {
+    max-width: 400px;
+  }
+}
+@media (max-width:1199px) {
+  .story__content {
+    max-width: 310px;
+  }
 }
 .story__title {
   font-size: 1.6rem;
@@ -640,13 +662,65 @@ body {
   color: #181818;
   margin-bottom: 25px;
 }
+@media (max-width:1199px) {
+  .story__title {
+    margin-bottom: 15px;
+  }
+}
 .story__text {
   font-size: 1.06rem;
   font-weight: 300;
   color: #7a839e;
 }
-.story {
-  padding: 182px 0 0;
+.story__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 526px;
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (max-width:1310px) {
+  .story__inner {
+    margin-top: 365px;
+  }
+}
+@media (max-width:1199px) {
+  .story__inner {
+    margin-top: 275px;
+  }
+}
+.story__photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+@media (max-width:1310px) {
+  .story__photo {
+    margin-top: 50px;
+    width: 50%;
+  }
+}
+@media (max-width:1199px) {
+  .story__photo {
+    right: 0px;
+    top: -20px;
+    width: 50%;
+  }
+}
+@media (max-width:998px) {
+  .story__photo {
+    right: -210px;
+    top: -70px;
+    width: 70%;
+  }
+}
+@media (max-width:767px) {
+  .story__photo {
+    display: none;
+  }
 }
 .classes {
   position: relative;

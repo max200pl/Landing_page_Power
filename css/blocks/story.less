@@ -1,16 +1,30 @@
 // main: ../style.less
 
-
 .story__item {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
+
+    @media @notebook{
+        margin-bottom: 30px;
+    }
+
+
+
 }
 
 .story__content {
     display: block;
-    max-width: 550px;
+    max-width: 460px;
     margin-left: 30px;
+
+     @media @perComputer{
+         max-width: 400px;
+    }
+
+      @media @notebook{
+         max-width: 310px;
+    }
 }
 
 .story__title {
@@ -19,6 +33,11 @@
     color: @black;
 
     margin-bottom: 25px;
+
+
+    @media @notebook{
+        margin-bottom: 15px;
+    }
 }
 
 .story__text {
@@ -27,6 +46,58 @@
     color: @gray-light;
 }
 
-.story {
-    padding: 182px 0 0;
+
+
+.story__inner {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-top: 526px;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media @perComputer{
+        margin-top: 365px;
+    }
+
+    @media @notebook{
+          margin-top: 275px;
+    }
+
+
+}
+
+.story__photo {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    position: relative;
+
+     @media @perComputer{
+        margin-top: 50px;
+        width: 50%;
+
+    }
+
+    @media @notebook{
+        right: 0px;
+        top: -20px;
+        width: 50%;
+    }
+
+    @media @tablet{
+        right: -210px;
+        top: -70px;
+        width: 70%;
+    }
+
+
+    @media @mobile{
+        display: none;
+    }
+
 }

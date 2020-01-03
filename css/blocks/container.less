@@ -64,10 +64,6 @@
     margin-bottom: 21.5px;
     color: @black;
 
-    &--intro {
-        font-size: 5.3rem;
-    }
-
     &:after {
         content: "";
         display: block;
@@ -87,8 +83,13 @@
     &--story{
         margin-bottom: 71px;
         p {
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
+
+    @media @notebook{
+        margin-bottom: 30px;
+    }
+
     }
 }
 
