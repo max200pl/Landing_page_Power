@@ -81,10 +81,6 @@
     display: block;
     width: 100%;
     height: auto;
-
-    @media @mobile {
-        width: 70%;
-    }
 }
 
 .skills__title {
@@ -119,13 +115,17 @@
     font-weight: 300;
     color: @gray-light;
     margin-bottom: 60px;
+
+    @media @mobile{
+        margin-bottom: 25px;
+    }
 }
 
 .skills__wrapper {
     padding: 100px 40px 133px;
 
     @media @mobile {
-        padding: 50px 15px 75px;
+        padding: 25px 15px 25px;
         text-align: center;
     }
 

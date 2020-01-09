@@ -11,6 +11,10 @@
      margin: 0 auto;
     }
 
+     @media @mobile-sm{
+     margin: 0 auto;
+    }
+
 }
 .card__img {
     display: block;
@@ -116,12 +120,9 @@ span {
  padding-right: 36px;
  padding-top: 130px;
 
-    @media @tablet{
-     padding-top:80px;
-    }
 
     @media @mobile{
-     padding-top:20px;
+     padding-top:25px;
      padding-right:0;
 
     }
@@ -139,5 +140,10 @@ span {
 
 .slider__wrapper {
     display: block;
-    height: auto;
+    position: relative;
+    height: 558px;
+
+    @media @tablet{
+         height: 388px;
+    }
 }
