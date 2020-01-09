@@ -1,146 +1,115 @@
  /*-------------slider 1--------------*/
 
-const worksSlider = $('[data-slider="sl"]');
+ const worksSlider = $('[data-slider="sl"]');
 
-worksSlider.slick({
+ worksSlider.slick({
 
-    slidesToShow: 5,
-    centerMode: true,
-    centerPadding: '0px',
+     slidesToShow: 5,
+     centerMode: true,
+     centerPadding: '0px',
 
-    arrows: false,
-    /* responsive: [
-        {
-            breakpoint: 1100,
-            settings: {
-                slidesToShow: 5
-            }
+     arrows: false,
+     responsive: [
+         {
+             breakpoint: 1199,
+             settings: {
+
+                 slidesToShow: 3
+             }
     },
-        {
-            breakpoint: 960,
-            settings: {
-                slidesToShow: 3
 
-            }
+         {
+             breakpoint: 998,
+             settings: {
+                 centerMode: false,
+                 slidesToShow: 2
+
+             }
     },
-        {
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 2
 
-            }
-    },
-        {
-            breakpoint: 640,
-            settings: {
-                slidesToShow: 1
-
-            }
-    },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                dots: false,
-                centerMode: false
-
-            }
+         {
+             breakpoint: 767,
+             settings: {
+                 slidesToShow: 1,
+                 centerMode: false,
+             }
     }
-  ]*/
+          ]
 
-});
+ });
 
 
-/*Button slider*/
+ /*Button slider*/
 
-$(".slickPrev").on("click", function (event) {
-    event.preventDefault();
+ $(".slickPrev").on("click", function (event) {
+     event.preventDefault();
 
-    let currentSlider = $(this).parents('.classes').find('[data-slider="sl"]');
+     let currentSlider = $(this).parents('.classes').find('[data-slider="sl"]');
 
-    currentSlider.slick("slickPrev");
-});
+     currentSlider.slick("slickPrev");
+ });
 
-$(".slickNext").on("click", function(event){
-    event.preventDefault();
+ $(".slickNext").on("click", function (event) {
+     event.preventDefault();
 
-    let currentSlider = $(this).parents('.classes').find('[data-slider="sl"]');
+     let currentSlider = $(this).parents('.classes').find('[data-slider="sl"]');
 
-    currentSlider.slick("slickNext");
-});
+     currentSlider.slick("slickNext");
+ });
 
-/*Bg slider*/
+ /*Bg slider*/
 
-/*--------------/slider 1--------------*/
+ /*--------------/slider 1--------------*/
 
  /*-------------slider 2 --------------*/
 
-const worksSliderTwo = $('[data-slider="sl2"]');
+ const worksSliderTwo = $('[data-slider="sl2"]');
 
-worksSliderTwo.slick({
+ worksSliderTwo.slick({
 
-    slidesToShow: 3,
-    arrows: false
-    /* responsive: [
-        {
-            breakpoint: 1100,
-            settings: {
-                slidesToShow: 5
-            }
-    },
-        {
-            breakpoint: 960,
-            settings: {
-                slidesToShow: 3
+     slidesToShow: 3,
+     arrows: false,
+     responsive: [
+         {
+             breakpoint: 1199,
+             settings: {
 
-            }
-    },
-        {
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 2
+                 slidesToShow: 2
 
-            }
-    },
-        {
-            breakpoint: 640,
-            settings: {
-                slidesToShow: 1
-
-            }
-    },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                dots: false,
-                centerMode: false
-
-            }
-    }
-  ]*/
-
-});
+             }
+        },
 
 
-/*Button slider*/
+         {
+             breakpoint: 767,
+             settings: {
+                 slidesToShow: 1,
+             }
+        }
+    ]
 
-$(".slickPrev").on("click", function (event) {
-    event.preventDefault();
 
-    let currentSlider = $(this).parents('.reviews').find('[data-slider="sl2"]');
+ });
 
-    currentSlider.slick("slickPrev");
-});
 
-$(".slickNext").on("click", function(event){
-    event.preventDefault();
+ /*Button slider*/
 
-    let currentSlider = $(this).parents('.reviews').find('[data-slider="sl2"]');
+ $(".slickPrev").on("click", function (event) {
+     event.preventDefault();
 
-    currentSlider.slick("slickNext");
-});
+     let currentSlider = $(this).parents('.reviews').find('[data-slider="sl2"]');
 
-/*Bg slider*/
+     currentSlider.slick("slickPrev");
+ });
 
-/*--------------/slider--------------*/
+ $(".slickNext").on("click", function (event) {
+     event.preventDefault();
+
+     let currentSlider = $(this).parents('.reviews').find('[data-slider="sl2"]');
+
+     currentSlider.slick("slickNext");
+ });
+
+ /*Bg slider*/
+
+ /*--------------/slider--------------*/

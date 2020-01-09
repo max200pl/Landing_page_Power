@@ -1,16 +1,32 @@
 // main: ../../style.less
 
 .trainers {
-    padding: 64px 0 407px;
-    background: url(../../../images/our_trainers/bg_our-trainers.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+
+
+//    background: url(../../../images/our_trainers/bg_ourTrainers.svg);
+//    background-repeat: no-repeat;
+//    background-position: 50% 100%;
+
 }
 
 .trainers__content {
         text-align: center;
         margin: 0 auto;
         max-width: 1160px;
+
+    @media  @notebook{
+         margin-top: 250px;
+    }
+
+    @media  @tablet{
+         margin-top: 150px;
+    }
+
+     @media  @mobile{
+         margin-top: 50px;
+    }
+
+
 }
 
 .trainers__title {
@@ -37,8 +53,27 @@
     margin-bottom: 112px;
 
     color: @gray-light;
+
+    @media @mobile{
+    margin-bottom: 60px;
+
+
+    }
 }
 
 
 
 
+
+.trainers__photo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    @media @tablet{
+        display: none;
+
+    }
+}

@@ -8,28 +8,25 @@
     padding-left: 1rem; // 15px
     position: relative;
 
-    @media @notebook{
+    @media @notebook {
         max-width: 1200px;
     }
 }
 
-.container__inner {
-    display: flex;
-    justify-content: space-between;
 
-    align-items: flex-start;
 
-    background: #fff;
-    position: relative;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-}
-
-.container__content{
+.container__content {
     width: 48.4%;
-    &--reviews{
-       width: 60%;
+
+    &--reviews {
+        width: 60%;
+    }
+
+    @media @mobile {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+
     }
 }
 
@@ -41,11 +38,23 @@
     display: block;
     position: relative;
 
-    &--right{
+    &--right {
         position: absolute;
-    right: -232px;
-    bottom: -800px;
-    z-index: 1;
+        right: -232px;
+        bottom: -800px;
+        z-index: 1;
+
+        @media @notebook {
+            width: 100%;
+        }
+
+        @media @tablet {
+            width: 100%;
+        }
+
+        @media @mobile {
+            width: 100%;
+        }
     }
 }
 
@@ -64,6 +73,15 @@
     margin-bottom: 21.5px;
     color: @black;
 
+    @media @tablet {
+        font-size: 2rem;
+        line-height: 0.5;
+    }
+
+    @media @mobile {
+        margin-top: 40px;
+    }
+
     &:after {
         content: "";
         display: block;
@@ -71,6 +89,10 @@
         height: 4px;
         margin-top: 26.5px;
         background-color: @red;
+
+        @media @mobile {
+            margin: 25px auto 0;
+        }
     }
 }
 
@@ -80,26 +102,42 @@
     font-weight: 300;
     color: @gray-light;
 
-    &--story{
+    &--story {
         margin-bottom: 71px;
+
         p {
             margin-bottom: 20px;
         }
 
-    @media @notebook{
-        margin-bottom: 30px;
-    }
+        @media @notebook {
+            margin-bottom: 20px;
+        }
+
+        @media @tablet {
+            font-size: 0.76rem;
+            margin-bottom: 10px;
+        }
 
     }
+
 }
 
-.container__nav {
-    position: relative;
-    z-index: 3;
-    width: 51.6%;
-    display: flex;
-    justify-content: flex-end;
-    &--reviews{
-        width: 40%;
+    .container__nav {
+        position: relative;
+        z-index: 3;
+        width: 51.6%;
+        display: flex;
+        justify-content: flex-end;
+
+        &--reviews {
+            width: 40%;
+        }
+
+        @media @mobile {
+            justify-content: right;
+            flex-wrap: wrap;
+
+            width: 100%;
+            margin: 20px;
+        }
     }
-}

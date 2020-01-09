@@ -1,6 +1,64 @@
 // main: ../style.less
 
-.classes{
+
+.container__classes {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    background: #fff;
     position: relative;
-    padding: 158px 0 848px;
+
+    margin-top: 224px;
+
+
+
+
+    @media @tablet{
+        margin-top: 105px;
+
+    }
+
+    @media @mobile{
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+
+}
+
+.classes__photo {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+
+
+    position: absolute;
+    right: -232px;
+    bottom: -800px;
+    z-index: 1;
+
+    @media @notebook{
+        bottom: -700px;
+
+    }
+
+    @media @tablet{
+ display: none;
+
+
+    }
+
+
+
+}
+
+.classes {
+    margin-bottom: 848px;
+
+    @media @notebook{
+         margin-bottom: 0;
+    }
 }
