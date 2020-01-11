@@ -26,7 +26,6 @@
         text-align: center;
         width: 70%;
         margin: 0 auto;
-
     }
 }
 
@@ -90,6 +89,10 @@
         margin-top: 26.5px;
         background-color: @red;
 
+        @media @tablet {
+            margin: 26.6px 0 21.5px;
+        }
+
         @media @mobile {
             margin: 25px auto 0;
         }
@@ -103,16 +106,16 @@
     color: @gray-light;
     margin-bottom: 71px;
 
-    & p:first-child{
-        margin-bottom: 25px;
-    }
-
         @media @notebook {
             margin-bottom: 25px;
         }
 
         @media @tablet {
             font-size: 1rem;
+
+            max-width: 740px;
+
+            margin: 0 auto 25px;
         }
 }
 
