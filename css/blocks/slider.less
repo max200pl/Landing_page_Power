@@ -8,12 +8,15 @@
     position: relative;
 
     @media @notebook{
-     margin: 0 auto;
+        margin: 0 auto;
+        width: 90%;
     }
 
-     @media @mobile-sm{
-     margin: 0 auto;
+    @media @mobile-sm{
+        margin: 0 auto;
+        width: 90%;
     }
+
 
 }
 .card__img {
@@ -73,9 +76,9 @@ span {
 
     @media @notebook{
      position: relative;
+     left: 0;
      max-width: 1200px;
      margin: 0 auto;
-
     }
 
     @media @tablet{
@@ -117,19 +120,23 @@ span {
 
 .slick-slide {
  display: block;
- padding-right: 36px;
+
  padding-top: 130px;
 
+     @media @tablet{
+     padding-top:70px;
+    }
 
     @media @mobile{
      padding-top:25px;
-     padding-right:0;
-
     }
 }
 
 .btn__slider{
     margin: 0 10px 0 67px;
+    @media @tablet{
+        margin: 0 10px 0;
+    }
 }
 
 

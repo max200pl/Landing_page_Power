@@ -11,6 +11,10 @@
     max-width: 1160px;
     padding-top: 244px;
 
+    @media @notebook{
+        padding-top: 0;
+    }
+
     @media @tablet{
          padding-top: 114px;
     }
@@ -187,7 +191,9 @@
         padding: 25px 30px 25px;
     }
 
-    @media @tablet {}
+    @media @tablet {
+        flex-basis: 100%;
+    }
 
     @media @mobile {}
 

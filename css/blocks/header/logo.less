@@ -6,7 +6,20 @@
 
 }
 .logo__img {
-    margin-left: .73rem;
+    margin-left: 15px;
+
+    @media @tablet{
+        & img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    @media @mobile{
+        & img{
+            width: 60px;
+            height: 60px;
+        }
+    }
 }
 
 .logo__name {
@@ -15,6 +28,12 @@
     color: @black;
     font-weight: 700;
     margin-left: 1.5rem;
+
+    @media @tablet{
+        font-size: 2rem;
+
+    }
+
 }
 
 

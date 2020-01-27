@@ -4,6 +4,7 @@
 .skills {
     display: flex;
     flex-wrap: wrap;
+    background: url("../images/our_trainers/bg_ourTrainers.svg") no-repeat center bottom;
 
     padding-bottom: 491px;
 
@@ -81,6 +82,10 @@
     display: block;
     width: 100%;
     height: auto;
+
+    @media @mobile {
+        width: 90%;
+    }
 }
 
 .skills__title {
@@ -90,7 +95,6 @@
     text-transform: uppercase;
     color: @red;
     margin-bottom: 11px;
-
 }
 
 .skills__subtitle {
@@ -131,8 +135,6 @@
 
 }
 
-
-
 .skills__social {
     line-height: 1;
     display: flex;
@@ -141,7 +143,6 @@
     width: 100%;
 
     @media @mobile {
-
         margin: 0 auto;
     }
 }

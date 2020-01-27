@@ -94,6 +94,12 @@
         font-size: 1rem;
         margin-bottom: 25px;
     }
+
+    @media @mobile{
+         max-width: 100%;
+    }
+
+
 }
 
 .reviews__footer {
@@ -179,7 +185,7 @@
 
     @media @tablet{
     bottom:-361.7px;
-    right: -272px;
+    right: -342px;
     }
 
     @media @mobile{
@@ -261,7 +267,7 @@
 
     @media @tablet{
      margin-top: 60px;
-     align-items: center;
+     align-items: flex-end;
     }
 
     @media @mobile{
@@ -269,5 +275,18 @@
      justify-content: center;
      flex-direction: column;
      align-items: center;
+    }
+}
+
+.reviews__content {
+    width: 48.4%;
+
+    @media @tablet{
+         width: 90%;
+    }
+
+    @media @mobile {
+        text-align: center;
+        margin: 0 auto;
     }
 }

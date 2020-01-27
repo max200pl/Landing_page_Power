@@ -54,10 +54,8 @@
 
     color: @gray-light;
 
-    @media @mobile{
-    margin-bottom: 60px;
-
-
+    @media @notebook{
+        margin-bottom: 60px;
     }
 }
 
@@ -72,8 +70,11 @@
     right: 0;
     z-index: -1;
 
+    @media @notebook{
+        bottom: 130px;
+    }
+
     @media @tablet{
         display: none;
-
     }
 }

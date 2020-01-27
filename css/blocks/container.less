@@ -18,13 +18,12 @@
 .container__content {
     width: 48.4%;
 
-    &--reviews {
-        width: 60%;
+    @media @tablet{
+         width: 100%;
     }
 
     @media @mobile {
         text-align: center;
-        width: 70%;
         margin: 0 auto;
     }
 }
@@ -112,11 +111,16 @@
 
         @media @tablet {
             font-size: 1rem;
+            max-width: 450px;
 
-            max-width: 740px;
 
+        }
+
+         @media @mobile {
             margin: 0 auto 25px;
         }
+
+
 }
 
     .container__nav {
@@ -135,7 +139,10 @@
             flex-wrap: wrap;
 
             width: 100%;
+        }
 
+        @media @mobile-sm {
+            justify-content: center;
         }
     }
 
