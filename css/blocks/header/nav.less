@@ -8,7 +8,26 @@
 
     align-items: center;
 
-/*    @media @mobile {
+    @media @tablet {
+        display: none;
+        flex-direction: column;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: center;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 60%;
+        height: auto;
+
+        background: #c2231e99;
+        box-shadow: 3px 3px 42px #000;
+        border: 1px solid #0000001a;
+    }
+
+    /*    @media @mobile {
         width: 100%;
         height: auto;
         padding: 1rem;
@@ -20,7 +39,7 @@
 
         background-color: #fff;
 
-        box-shadow: 0 5px 10px rgba(0,0,0, .3);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
 
         text-align: center;
 
@@ -42,6 +61,7 @@
 
     color: #000;
 
+
     &:after {
         position: absolute;
         z-index: 1;
@@ -51,8 +71,8 @@
         width: 0;
         height: 3px;
 
-        content: '';
-        transition: width .2s linear;
+        content: "";
+        transition: width 0.2s linear;
 
         background-color: @red;
     }
@@ -67,9 +87,7 @@
         padding: 1rem 3rem;
         background-color: @red;
 
-        transition:
-            background-color .2s linear,
-            .2s color linear;
+        transition: background-color 0.2s linear, 0.2s color linear;
 
         border: 2px solid @red;
         border-radius: 5px;
@@ -80,27 +98,38 @@
             color: @red;
             background-color: @white;
         }
+
+        @media @tablet {
+            background-color: #fff;
+            padding: 0;
+            transition: none;
+            border: none;
+            color: black;
+        }
     }
 
-
-    @media @perComputer{
+    @media @perComputer {
         font-size: 1rem;
         margin-left: 2rem;
         font-weight: 400;
     }
 
-    @media @notebook{
+    @media @notebook {
         font-size: 1rem;
-        margin-left: .98rem;
+        margin-left: 0.98rem;
         font-weight: 400;
     }
 
-    @media @tablet{
-        display: none;
+    @media @tablet {
+        font-size: 1.2rem;
+        margin-left: 0;
+        font-weight: 200;
+        padding: 0px 20px;
+        margin: 5px;
     }
 
 
-  /*  @media @mobile {
+    /*  @media @mobile {
         width: 100%;
         margin-left: 0;
         padding: .5rem 1rem;

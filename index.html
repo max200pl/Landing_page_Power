@@ -3,17 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Power</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
 
             <div class="header__inner">
@@ -25,15 +25,15 @@
                 </div>
 
                 <nav class="nav" id="nav">
-                    <a class="nav__link" href="#">Home</a>
-                    <a class="nav__link" href="#">About Us</a>
-                    <a class="nav__link" href="#">Our Classes</a>
-                    <a class="nav__link" href="#">Our Trainers</a>
-                    <a class="nav__link" href="#">Our Pricing</a>
-                    <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire-me">Contact Us</a>
+                    <a class="nav__link" data-scroll="#intro">Home</a>
+                    <a class="nav__link" data-scroll="#intro">About Us</a>
+                    <a class="nav__link" data-scroll="#classes">Our Classes</a>
+                    <a class="nav__link" data-scroll="#trainers">Our Trainers</a>
+                    <a class="nav__link" data-scroll="#pricing">Our Pricing</a>
+                    <a class="nav__link nav__link--btn" data-modal="#contact" data-modal="#modal_hire-me">Contact Us</a>
                 </nav>
 
-                <div class="burger">
+                <div class="burger" id="button">
                     <img class="burger__icon" src="images/header/menu/menu.svg" alt="">
                 </div>
 
@@ -41,14 +41,16 @@
         </div>
     </header>
 
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <div class="intro__content">
                     <h2 class="intro__subtitle">Build Your Body &#38;</h2>
                     <h1 class="intro__title">Shape Yourself!</h1>
                     <div class="container__text">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore architecto beatae vitae
+                            dicta sunt explicabo.</p>
                     </div>
                     <div class="btn__wrapper">
                         <a href="" class="btn__cursor-text">Next</a>
@@ -79,8 +81,11 @@
                         <div class="story-header__title">Our Story</div>
 
                         <div class="story-header__text">
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo.</p>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                         </div>
 
                     </div>
@@ -94,7 +99,8 @@
                                 <div class="story__item-content">
                                     <div class="story__content-title">Open Door Policy</div>
                                     <div class="story__content-text">
-                                        <p>Trem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi vitae dicta sunt explicabo sequi nesciunt.</p>
+                                        <p>Trem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi vitae
+                                            dicta sunt explicabo sequi nesciunt.</p>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +111,8 @@
                                 <div class="story__item-content">
                                     <div class="story__content-title">Fully Insured</div>
                                     <div class="story__content-text">
-                                        <p>Trem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi vitae dicta sunt explicabo sequi nesciunt.</p>
+                                        <p>Trem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi vitae
+                                            dicta sunt explicabo sequi nesciunt.</p>
                                     </div>
                                 </div>
 
@@ -117,7 +124,8 @@
                                 <div class="story__item-content">
                                     <div class="story__content-title">Personal Trainer</div>
                                     <div class="story__content-text">
-                                        <p>Trem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi vitae dicta sunt explicabo sequi nesciunt.</p>
+                                        <p>Trem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi vitae
+                                            dicta sunt explicabo sequi nesciunt.</p>
                                     </div>
                                 </div>
 
@@ -133,18 +141,20 @@
         </div>
     </section>
 
-    <section class="classes">
+    <section class="classes" id="classes">
         <div class="container">
             <div class="container__classes">
                 <div class="classes__content">
 
                     <div class="container__title">Our Classes</div>
                     <div class="container__text">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
                 </div>
 
-        <div class="container__nav">
+                <div class="container__nav">
                     <nav class="classes__nav nav" id="nav">
                         <a class="nav__link" href="#">All</a>
                         <a class="nav__link" href="#">Mens</a>
@@ -267,13 +277,15 @@
         </div>
     </section>
 
-    <section class="trainers">
+    <section class="trainers" id="trainers">
         <div class="container">
 
             <div class="trainers__content">
                 <h1 class="trainers__title">Our Trainers</h1>
                 <div class="trainers__text ">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore architecto beatae vitae dicta sunt explicabo.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore architecto beatae vitae dicta sunt
+                        explicabo.</p>
                 </div>
             </div>
 
@@ -288,7 +300,8 @@
                         <div class="skills__wrapper">
                             <div class="skills__title">AMARYAN JACKSON</div>
                             <div class="skills__subtitle">Body Builde</div>
-                            <div class="skills__text">Sed ut perspiciatis unde omnis iste natus error sit quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            <div class="skills__text">Sed ut perspiciatis unde omnis iste natus error sit quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                             </div>
 
                             <div class="skills__social">
@@ -315,7 +328,8 @@
                         <div class="skills__wrapper">
                             <div class="skills__title">ILONA JEKLIN</div>
                             <div class="skills__subtitle">Gymnast</div>
-                            <div class="skills__text">Sed ut perspiciatis unde omnis iste natus error sit quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            <div class="skills__text">Sed ut perspiciatis unde omnis iste natus error sit quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                             </div>
 
                             <div class="skills__social">
@@ -351,7 +365,8 @@
                         <div class="skills__wrapper">
                             <div class="skills__title">John Doe</div>
                             <div class="skills__subtitle">Body Builder</div>
-                            <div class="skills__text">Sed ut perspiciatis unde omnis iste natus error sit quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            <div class="skills__text">Sed ut perspiciatis unde omnis iste natus error sit quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                             </div>
 
                             <div class="skills__social">
@@ -378,12 +393,14 @@
 
     </section>
 
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
             <div class="pricing__content">
                 <h1 class="pricing__title">Our Pricing</h1>
                 <div class="pricing__text ">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore architecto beatae vitae dicta sunt explicabo.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore architecto beatae vitae dicta sunt
+                        explicabo.</p>
                 </div>
             </div>
 
@@ -466,7 +483,9 @@
 
                     <div class="reviews__title">What People Says About Us?</div>
                     <div class="reviews__titleText">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, illo inventore veritatis et quasi architecto beatae vitae
+                            dicta sunt explicabo.</p>
                     </div>
                 </div>
                 <div class="container__nav container__nav--reviews">
@@ -502,7 +521,8 @@
                                         <img src="images/reviews/stars.svg" alt="" class="stars">
                                     </div>
                                     <div class="reviews__text">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium
+                                            doloremque laudantium totam rem aperiam, eaque ipsa.</p>
                                     </div>
                                     <div class="reviews__footer">
                                         <div class="footer__name">
@@ -511,7 +531,8 @@
                                         <div class="footer__location">
                                             Orlando, Florida
                                         </div>
-                                        <img src="images/reviews/bg_item_reviews.svg" alt="" class="reviews__footer-img">
+                                        <img src="images/reviews/bg_item_reviews.svg" alt=""
+                                            class="reviews__footer-img">
                                     </div>
                                 </div>
 
@@ -530,7 +551,8 @@
                                         <img src="images/reviews/stars.svg" alt="" class="stars">
                                     </div>
                                     <div class="reviews__text">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium
+                                            doloremque laudantium totam rem aperiam, eaque ipsa.</p>
                                     </div>
                                     <div class="reviews__footer">
                                         <div class="footer__name">
@@ -539,7 +561,8 @@
                                         <div class="footer__location">
                                             Orlando, Florida
                                         </div>
-                                        <img src="images/reviews/bg_item_reviews.svg" alt="" class="reviews__footer-img">
+                                        <img src="images/reviews/bg_item_reviews.svg" alt=""
+                                            class="reviews__footer-img">
                                     </div>
                                 </div>
 
@@ -558,7 +581,8 @@
                                         <img src="images/reviews/stars.svg" alt="" class="stars">
                                     </div>
                                     <div class="reviews__text">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium
+                                            doloremque laudantium totam rem aperiam, eaque ipsa.</p>
                                     </div>
                                     <div class="reviews__footer">
                                         <div class="footer__name">
@@ -567,7 +591,8 @@
                                         <div class="footer__location">
                                             Orlando, Florida
                                         </div>
-                                        <img src="images/reviews/bg_item_reviews.svg" alt="" class="reviews__footer-img">
+                                        <img src="images/reviews/bg_item_reviews.svg" alt=""
+                                            class="reviews__footer-img">
                                     </div>
                                 </div>
 
@@ -585,7 +610,8 @@
                                         <img src="images/reviews/stars.svg" alt="" class="stars">
                                         <img src="images/reviews/stars.svg" alt="" class="stars">
                                     </div>
-                                    <div class="reviews__text">Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa.
+                                    <div class="reviews__text">Sed ut perspiciatis unde omnis iste natus error sit volup
+                                        tatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa.
                                     </div>
                                     <div class="reviews__footer">
                                         <div class="footer__name">
@@ -594,7 +620,8 @@
                                         <div class="footer__location">
                                             Orlando, Florida
                                         </div>
-                                        <img src="images/reviews/bg_item_reviews.svg" alt="" class="reviews__footer-img">
+                                        <img src="images/reviews/bg_item_reviews.svg" alt=""
+                                            class="reviews__footer-img">
                                     </div>
                                 </div>
 
@@ -619,7 +646,9 @@
                     </div>
 
                     <div class="footer__text">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, illo inventore veritatis et quasi architecto beatae vitae
+                            dicta sunt explicabo.</p>
                     </div>
 
                     <div class="footer__social">
@@ -658,7 +687,6 @@
                             </div>
 
                             <div class="row__item">
-
                                 <div class="footer__icon" href="#">
                                     <img class="row__icon" src="images/footer/clock.svg" alt="">
                                 </div>
@@ -676,7 +704,6 @@
                             <div class="row__item">
                                 <img class="row__icon" src="images/footer/email.svg" alt="">
                                 <div class="row__text">+1 234 567 8901</div>
-
                             </div>
 
                             <div class="row__item">
@@ -687,23 +714,18 @@
                     </div>
                 </div>
 
-
             </div>
-
             <div class="copyright">
                 Copyright © 2019 GYM. All rights reserved.
             </div>
-
         </div>
-
-
     </footer>
-
-
     <!-- /*JS*/ -->
     <!-- Подключаем скрипты -->
+    <script src="scripts/app.js"></script>
     <script src="scripts/slick.min.js"></script>
-    <script src="scripts/js.js"></script>
+
+    <script src="scripts/js_slider.js"></script>
 </body>
 
 </html>
