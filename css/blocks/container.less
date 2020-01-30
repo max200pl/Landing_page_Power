@@ -18,8 +18,8 @@
 .container__content {
     width: 48.4%;
 
-    @media @tablet{
-         width: 100%;
+    @media @tablet {
+        width: 100%;
     }
 
     @media @mobile {
@@ -73,11 +73,6 @@
 
     @media @tablet {
         font-size: 2rem;
-        line-height: 0.5;
-    }
-
-    @media @mobile {
-        margin-top: 40px;
     }
 
     &:after {
@@ -105,45 +100,43 @@
     color: @gray-light;
     margin-bottom: 71px;
 
-        @media @notebook {
-            margin-bottom: 25px;
-        }
+    @media @notebook {
+        margin-bottom: 25px;
+    }
 
-        @media @tablet {
-            font-size: 1rem;
-            max-width: 450px;
+    @media @tablet {
+        font-size: 1rem;
+        max-width: 450px;
 
 
-        }
+    }
 
-         @media @mobile {
-            margin: 0 auto 25px;
-        }
+    @media @mobile {
+        margin: 0 auto 25px;
+    }
 
 
 }
 
-    .container__nav {
-        position: relative;
-        z-index: 3;
-        width: 51.6%;
-        display: flex;
-        justify-content: flex-end;
+.container__nav {
+    position: relative;
+    z-index: 3;
+    width: 51.6%;
+    display: flex;
+    justify-content: flex-end;
 
-        &--reviews {
-            width: 40%;
-        }
-
-        @media @mobile {
-            justify-content: right;
-            flex-wrap: wrap;
-
-            width: 100%;
-        }
-
-        @media @mobile-sm {
-            justify-content: center;
-        }
+    &--reviews {
+        width: 40%;
     }
 
+    @media @mobile {
+        justify-content: right;
+        flex-wrap: wrap;
 
+        width: 100%;
+    }
+
+    @media @mobile-sm {
+        justify-content: center;
+    }
+}

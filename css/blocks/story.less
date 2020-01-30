@@ -5,35 +5,34 @@
     justify-content: flex-end;
     width: 100%;
 
+    margin-bottom: 128px;
+
     background: url("../images/story/xvhgefnycofckvulefqvajudz_usermedia.svg");
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size:  45% 100%;
+    background-size: 45% 100%;
     background-origin: content-box;
-    padding-top: 182px;
 
-    @media @perComputer{
-        background-size:  38% 80%;
+    @media @perComputer {
+        background-size: 38% 80%;
     }
 
-    @media @notebook{
+    @media @notebook {
+
         justify-content: center;
-        background-size:  40% 60%;
+        background-size: 40% 60%;
         background-position: 80px bottom;
-        padding-top: 0;
     }
 
-    @media @tablet{
-        background-size:  40% 55%;
+    @media @tablet {
+        margin-bottom: 60px;
+        background-size: 40% 55%;
         background-position: 20px bottom;
 
     }
 
-     @media @mobile{
+    @media @mobile {
         background: none;
-
-        padding-top: 60px;
-
     }
 }
 
@@ -47,18 +46,14 @@
 .story-header {
     display: flex;
     flex-direction: column;
-    margin-top: 94.5px;
-
     width: 700px;
+    margin-top: 20px;
 
-    @media @notebook{
-       width: 100%;
+    @media @notebook {
+        width: 100%;
     }
 
-    @media @mobile-sm{
-        margin-top: 0;
-
-    }
+    @media @mobile-sm {}
 
 
 }
@@ -68,8 +63,8 @@
     font-weight: 700;
     color: @black;
 
-    @media @notebook{
-           text-align: center;
+    @media @notebook {
+        text-align: center;
     }
 
     &:after {
@@ -83,19 +78,19 @@
 
         margin: 34.5px 0 21.5px;
 
-        @media @notebook{
-               margin:34.5px auto 21.5px;
+        @media @notebook {
+            margin: 34.5px auto 21.5px;
         }
     }
 }
 
 .story-header__text {
-    @media @notebook{
-       margin: 0 50px 0 ;
+    @media @notebook {
+        margin: 0 50px 0;
     }
 
-    @media @mobile-sm{
-       margin: 0 0 0 ;
+    @media @mobile-sm {
+        margin: 0 0 0;
     }
 
     & p {
@@ -104,8 +99,8 @@
         color: @gray-light;
         margin-bottom: 30px;
 
-        @media @notebook{
-               text-align: center;
+        @media @notebook {
+            text-align: center;
         }
     }
 
@@ -114,16 +109,16 @@
 
 /*Item-Story*/
 
-.story__wrapper-inner{
-   display: flex;
-   justify-content: flex-end;
+.story__wrapper-inner {
+    display: flex;
+    justify-content: flex-end;
 
-   @media @notebook{
-      width: 100%;
+    @media @notebook {
+        width: 100%;
     }
 
-    @media @mobile{
-      justify-content: center;
+    @media @mobile {
+        justify-content: center;
     }
 }
 
@@ -136,17 +131,17 @@
 
     margin-top: 45px;
 
-    @media @notebook{
-      width: 50%;
+    @media @notebook {
+        width: 50%;
     }
 
-    @media @tablet{
-      margin-top: 40px ;
+    @media @tablet {
+        margin-top: 40px;
     }
 
-    @media @mobile{
-      width: 100%;
-      margin: 40px auto;
+    @media @mobile {
+        width: 100%;
+        margin: 40px auto;
     }
 
 }
@@ -156,13 +151,13 @@
     position: relative;
     margin-right: 35px;
 
-    @media @tablet{
-          margin-right: 15px;
-     }
+    @media @tablet {
+        margin-right: 15px;
+    }
 
-    @media @mobile{
-         margin: 0 auto;
-     }
+    @media @mobile {
+        margin: 0 auto;
+    }
 }
 
 .story__item-img {
@@ -175,28 +170,28 @@
     width: 106px;
     height: 106px;
 
-    @media @tablet{
+    @media @tablet {
         left: -50px;
     }
 
-    @media @mobile{
+    @media @mobile {
         left: 0;
-         width: 90px;
-         height: 90px;
+        width: 90px;
+        height: 90px;
 
-     }
+    }
 }
 
 .story__item-content {
     margin-left: 135px;
 
-    @media @tablet{
+    @media @tablet {
         margin-left: 75px;
     }
 
-     @media @mobile{
+    @media @mobile {
         margin-left: 105px;
-     }
+    }
 }
 
 .story__content-title {
@@ -212,7 +207,7 @@
         color: @gray-light;
         margin-bottom: 71px;
 
-        @media @notebook{
+        @media @notebook {
             margin-bottom: 40px;
         }
     }

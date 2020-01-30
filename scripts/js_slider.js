@@ -12,7 +12,6 @@ worksSlider.slick({
     responsive: [{
             breakpoint: 1199,
             settings: {
-
                 slidesToShow: 3
             }
         },

@@ -1,35 +1,22 @@
 // main: ../style.less
 
 .pricing {
-
     padding-bottom: 87px;
 }
 
 .pricing__content {
+    padding-top: 20px;
     text-align: center;
     margin: 0 auto;
     max-width: 1160px;
-    padding-top: 244px;
-
-    @media @notebook{
-        padding-top: 0;
-    }
-
-    @media @tablet{
-         padding-top: 114px;
-    }
-
-    @media @mobile {
-        padding-top: 54px;
-    }
 }
 
 .pricing__title {
     font-size: 2.6rem;
     font-weight: 700;
-    line-height: 1;
     margin-bottom: 43.5px;
     color: @black;
+    margin-top: 20px;
 
     &:after {
         content: "";
@@ -49,11 +36,11 @@
 
     color: @gray-light;
 
-    @media @tablet{
+    @media @tablet {
         margin-bottom: 60px;
     }
 
-    @media @mobile{
+    @media @mobile {
         margin-bottom: 0;
     }
 
@@ -78,7 +65,7 @@
     max-width: 290px;
     margin: 45px auto 126px;
 
-     @media @tablet{
+    @media @tablet {
         margin: 45px auto 60px;
     }
 
@@ -113,8 +100,6 @@
         margin-bottom: 52.4px;
     }
 }
-
-.pricing__plan-wrapper {}
 
 .pricing__text-title {
     font-size: 1.6rem;
@@ -158,8 +143,6 @@
     }
 }
 
-
-
 .pricing__plan-item {
     display: flex;
     flex-direction: column;
@@ -194,10 +177,4 @@
     @media @tablet {
         flex-basis: 100%;
     }
-
-    @media @mobile {}
-
-
-
-
 }

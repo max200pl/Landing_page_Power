@@ -7,18 +7,19 @@
     border-radius: 5px;
     position: relative;
 
-    @media @notebook{
+    @media @notebook {
         margin: 0 auto;
         width: 90%;
     }
 
-    @media @mobile-sm{
+    @media @mobile-sm {
         margin: 0 auto;
         width: 90%;
     }
 
 
 }
+
 .card__img {
     display: block;
     width: 100%;
@@ -36,15 +37,15 @@
     padding: 20px 30px;
 
 
-    @media @notebook{
-      width: 100%;
+    @media @notebook {
+        width: 100%;
     }
 
-    @media @tablet{
-      width: 100%;
+    @media @tablet {
+        width: 100%;
     }
 
-    @media @mobile{
+    @media @mobile {
         width: 100%;
     }
 }
@@ -74,15 +75,19 @@ span {
     z-index: 1000;
     max-width: 2000px;
 
-    @media @notebook{
-     position: relative;
-     left: 0;
-     max-width: 1200px;
-     margin: 0 auto;
+
+    @media @notebook {
+        position: relative;
+        left: 0;
+        max-width: 1200px;
+        margin: 0 auto 185px;
+
     }
 
-    @media @tablet{
-      width: 100%;
+    @media @tablet {
+        width: 100%;
+        margin-bottom: 120px;
+
     }
 
 
@@ -94,13 +99,14 @@ span {
 /*подымание центрального слайда */
 
 .slick-current {
-  /*    .slick-current центрального слайд */
-  transform: translateY(-35px);
-  transition: transform .5s linear;
-  position: relative;
-  z-index: 1;
-     @media @mobile{
-     transform: translateY(0);
+    /*    .slick-current центрального слайд */
+    transform: translateY(-35px);
+    transition: transform .5s linear;
+    position: relative;
+    z-index: 1;
+
+    @media @mobile {
+        transform: translateY(0);
     }
 }
 
@@ -119,22 +125,23 @@ span {
 /*текущие слайды */
 
 .slick-slide {
- display: block;
+    display: block;
 
- padding-top: 130px;
+    padding-top: 130px;
 
-     @media @tablet{
-     padding-top:70px;
+    @media @tablet {
+        padding-top: 70px;
     }
 
-    @media @mobile{
-     padding-top:25px;
+    @media @mobile {
+        padding-top: 25px;
     }
 }
 
-.btn__slider{
+.btn__slider {
     margin: 0 10px 0 67px;
-    @media @tablet{
+
+    @media @tablet {
         margin: 0 10px 0;
     }
 }
@@ -150,7 +157,7 @@ span {
     position: relative;
     height: 558px;
 
-    @media @tablet{
-         height: 388px;
+    @media @tablet {
+        height: 388px;
     }
 }

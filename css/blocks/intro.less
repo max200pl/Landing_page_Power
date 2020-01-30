@@ -1,15 +1,4 @@
 // main: ../style.less
-.intro {
-    margin-top: 122px;
-
-    @media @notebook {
-        margin-top: 0;
-    }
-
-    /*    @media @mobile{
-        margin-top: 100px;
-    }*/
-}
 
 /*PHOTO*/
 
@@ -21,13 +10,11 @@
     z-index: 2;
 
     @media @notebook {
-         top: -580px;
+        top: -580px;
         left: -300px;
     }
 
-    @media @tablet {
-
-    }
+    @media @tablet {}
 
     @media @mobile {
         display: none;
@@ -39,7 +26,7 @@
 .intro__photo {
 
     position: absolute;
-    top: 60px;
+    top: 20px;
     right: -340px;
     z-index: 1;
 
@@ -106,10 +93,14 @@
     display: flex;
     position: relative;
 
+    @media @notebook {
+        margin-bottom: 0;
+    }
+
 }
 
 .intro__content {
-    margin: 367px 0 344px;
+    margin: 367px 0 520px;
 
     max-width: 650px;
     position: relative;
@@ -121,9 +112,7 @@
         max-width: 540px;
     }
 
-    @media @tablet{
-
-    }
+    @media @tablet {}
 
     @media @mobile {
         text-align: center;
@@ -178,7 +167,7 @@
         margin-bottom: 2px;
     }
 
-     @media @tablet {
+    @media @tablet {
         font-size: 2.7rem;
         margin-bottom: 2px;
     }
