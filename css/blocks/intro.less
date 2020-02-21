@@ -2,15 +2,25 @@
 
 /*PHOTO*/
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 820px;
+    position: relative;
+}
+
 .intro__svg-bulle {
     position: absolute;
-    top: -630px;
-    left: -250px;
+    top: -340px;
+    left: -270px;
 
     z-index: 2;
 
     @media @notebook {
-        top: -580px;
+        top: -520px;
         left: -300px;
     }
 
@@ -26,7 +36,7 @@
 .intro__photo {
 
     position: absolute;
-    top: 20px;
+    top: 90px;
     right: -340px;
     z-index: 1;
 
@@ -43,13 +53,13 @@
 
     @media @notebook {
         right: -230px;
-        top: 0;
+        top: 100px;
         width: 70%;
     }
 
     @media @tablet {
         right: -140px;
-        top: -20px;
+        top: 80px;
     }
 
 
@@ -100,7 +110,7 @@
 }
 
 .intro__content {
-    margin: 367px 0 520px;
+    margin: 367px 0 367px;
 
     max-width: 650px;
     position: relative;
@@ -108,15 +118,14 @@
 
 
     @media @notebook {
-        margin: 240px 0 240px;
+        margin: 270px 0 240px;
         max-width: 540px;
     }
 
-    @media @tablet {}
 
     @media @mobile {
         text-align: center;
-        margin: 100px auto;
+        margin: 120px auto 60px;
     }
 
 }

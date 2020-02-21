@@ -5,21 +5,32 @@
     align-items: center;
 
 }
+
 .logo__img {
     margin-left: 15px;
 
-    @media @tablet{
-        & img{
+    @media @notebook {
+        & img {
+            width: 100px;
+            height: 100px;
+
+        }
+    }
+
+    @media @tablet {
+        & img {
             width: 80px;
             height: 80px;
         }
     }
-    @media @mobile{
-        & img{
+
+    @media @mobile {
+        & img {
             width: 60px;
             height: 60px;
         }
     }
+
 }
 
 .logo__name {
@@ -29,11 +40,9 @@
     font-weight: 700;
     margin-left: 1.5rem;
 
-    @media @tablet{
+    @media @tablet {
         font-size: 2rem;
 
     }
 
 }
-
-
